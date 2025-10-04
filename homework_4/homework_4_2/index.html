@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework_4_2</title>
+  </head>
+  <body>
+    <script>
+      const number = prompt("Input 3-digital number:");
+      if (number) {
+        if (number.length === 3) {
+          if (number[0] === number[1] && number[1] === number[2]) {
+            alert("All digits in the number are the same");
+          } else if (
+            number[0] === number[1] ||
+            number[1] === number[2] ||
+            number[0] === number[2]
+          ) {
+            alert("Some digits in the number are the same");
+          } else {
+            alert("There no the same digits in the number");
+          }
+        } else {
+          alert("You don`t input 3-digital number ((");
+        }
+      } else {
+        alert("You don`t input number ((");
+      }
+    </script>
+  </body>
+</html>

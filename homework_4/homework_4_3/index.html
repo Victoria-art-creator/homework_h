@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework_4_3</title>
+  </head>
+  <body>
+    <script>
+      const yearBirth = prompt("Enter the year you were born: ");
+      const yearNow = 2025;
+      let yearDetail = "";
+
+      if (yearBirth === null) {
+        alert("It`s a pity you don`t want to enter the year you were born((");
+      } else {
+        yearDetail = `Your age is ${yearNow - yearBirth}. `;
+      }
+
+      const city = prompt("Enter your city: ");
+      let cityDetail = "";
+
+      if (city === null) {
+        alert("It`s a pity you don`t want to enter your city((");
+      } else {
+        if (city === "Kyiv") {
+          cityDetail = "You live in the capital of Ukraine. ";
+        } else if (city === "Washington") {
+          cityDetail = "You live in the capital of the USA. ";
+        } else if (city === "London") {
+          cityDetail =
+            "You live in the capital of the UK of Great Britain and Northern Ireland. ";
+        } else {
+          cityDetail = `You live in the city ${city}. `;
+        }
+      }
+
+      const sport = prompt("Enter your favourite kind of sport: ");
+      let sportDetail = "";
+
+      if (sport === null) {
+        alert(
+          "It`s a pity you don`t want to enter your favourite kind of sport(("
+        );
+      } else {
+        if (sport === "football") {
+          sportDetail = `Your favourite kind of sport is ${sport}. Cool! Would you like to be as Lionel Messi?`;
+        } else if (sport === "basketball") {
+          sportDetail = `Your favourite kind of sport is ${sport}. Cool! Would you like to be as Michael Jordan?`;
+        } else if (sport === "chess") {
+          sportDetail = `Your favourite kind of sport is ${sport}. Cool! Would you like to be as Magnus Carlsen?`;
+        } else {
+          sportDetail = `Your favourite kind of sport is ${sport}`;
+        }
+      }
+
+      alert(`${yearDetail} ${cityDetail} ${sportDetail}. `);
+    </script>
+  </body>
+</html>
