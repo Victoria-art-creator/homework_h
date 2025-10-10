@@ -6,6 +6,37 @@
     <title>Homework_6_3</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      const contactBook = {
+        contacts: [
+          {
+            name: "Alex",
+            phone: "0981212212",
+            email: "alex@gmail.com",
+          },
+          {
+            name: "Nicolas",
+            phone: "0662323322",
+            email: "nick@gmail.com",
+          },
+        ],
+
+        addContact(name, phone, email) {
+          return this.contacts.push({ name, phone, email });
+        },
+
+        findContact(name) {
+          const contact = this.contacts.find((user) => {
+            return user.name === name;
+          });
+          return contact;
+        },
+      };
+
+      contactBook.addContact("Mike", "0992233445", "mike@gmail.com");
+      console.log(contactBook.contacts);
+
+      console.log(contactBook.findContact("Nicolas"));
+    </script>
   </body>
 </html>

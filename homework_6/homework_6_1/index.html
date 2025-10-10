@@ -6,6 +6,17 @@
     <title>Homework_6_1</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      const user = {
+        name: "Alex",
+        age: 15,
+        city: "Kyiv",
+        getData: function () {
+          return `Name: ${user.name}, Age: ${user.age}, City: ${user.city}`;
+        },
+      };
+
+      console.log(user.getData());
+    </script>
   </body>
 </html>
