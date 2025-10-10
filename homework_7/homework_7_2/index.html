@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework_7_2</title>
+  </head>
+  <body>
+    <script>
+      function calcArithmeticMean(array) {
+        let result = 0;
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+          if (typeof array[i] == "number") {
+            result += array[i];
+            count++;
+          }
+        }
+        return result / count;
+      }
+
+      const arr = [5, true, "hi", 23, null, 10, 12, undefined];
+      console.log(calcArithmeticMean(arr));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework_7_1</title>
+  </head>
+  <body>
+    <script>
+      const str = prompt("Please enter some words: ");
+      let arr = [];
+
+      while (true) {
+        let letter = prompt(
+          "Please enter a letter to delete from the string: "
+        );
+        if (!letter) break;
+        arr.push(letter);
+      }
+
+      function deleteLetters(words, arrayOfLetters) {
+        let resultString = "";
+
+        for (let i = 0; i < words.length; i++) {
+          let char = words[i];
+          if (!arrayOfLetters.includes(char)) {
+            resultString += char;
+          }
+        }
+        return resultString;
+      }
+
+      console.log(deleteLetters(str, arr));
+    </script>
+  </body>
+</html>
