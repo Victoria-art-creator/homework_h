@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework_8_3</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+      function addNumbers() {
+        let userInput;
+        for (let i = 0; i < 10; i++) {
+          userInput = prompt("Enter a number greater than 100");
+          if (userInput > 100 || isNaN(userInput)) {
+            return userInput;
+          }
+        }
+        return userInput;
+      }
+
+      console.log(addNumbers());
+    </script>
+  </body>
+</html>
