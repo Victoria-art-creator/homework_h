@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework_10_1</title>
+  </head>
+  <body>
+    <script>
+      function calculateTotalSalaries(company) {
+        let total = 0;
+        for (let key in company) {
+          if (Array.isArray(company[key])) {
+            company[key].forEach((employee) => {
+              total += employee.salary;
+            });
+          } else if (typeof company[key] === "object") {
+            total += calculateTotalSalaries(company[key]);
+          }
+        }
+        return total;
+      }
+
+      const company1 = {
+        sales: [
+          { name: "John", salary: 1000 },
+          { name: "Alice", salary: 600 },
+        ],
+        development: {
+          web: [
+            { name: "Peter", salary: 2000 },
+            { name: "Alex", salary: 1800 },
+          ],
+          internals: [{ name: "Jack ", salary: 1300 }],
+        },
+      };
+
+      console.log(calculateTotalSalaries(company1));
+    </script>
+  </body>
+</html>

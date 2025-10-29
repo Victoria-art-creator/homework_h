@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework_11_2</title>
+    <style>
+      .original-color {
+        color: black;
+      }
+      .changed-color {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="text-block" class="original-color">
+      Це текст, який змінює колір при натисканні кнопки.
+    </div>
+
+    <button onclick="changeColor()">Змінити колір</button>
+
+    <script>
+      function changeColor() {
+        const textBlock = document.getElementById("text-block");
+        if (textBlock.classList.contains("original-color")) {
+          textBlock.classList.remove("original-color");
+          textBlock.classList.add("changed-color");
+        } else {
+          textBlock.classList.remove("changed-color");
+          textBlock.classList.add("original-color");
+        }
+      }
+    </script>
+  </body>
+</html>
