@@ -6,6 +6,18 @@
     <title>Homework_12_2</title>
   </head>
   <body>
-    <script></script>
+    <div id="parentContainer">
+      <button class="button1">Button 1</button>
+      <button class="button2">Button 2</button>
+      <button class="button3">Button 3</button>
+    </div>
+    <script>
+      const parent = document.getElementById("parentContainer");
+      parent.addEventListener("click", function (event) {
+        if (event.target.tagName === "BUTTON") {
+          alert("Button clicked: " + event.target.innerText);
+        }
+      });
+    </script>
   </body>
 </html>

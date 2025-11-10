@@ -6,6 +6,28 @@
     <title>Homework_12_1</title>
   </head>
   <body>
-    <script></script>
+    <button id="saveLink">Input link</button>
+    <button id="goLink">Go to the link</button>
+    <script>
+      let savedLink = "";
+      document.getElementById("saveLink").addEventListener("click", () => {
+        const link = prompt("Input URL: ");
+        if (link && link.trim() !== "") {
+          savedLink = link;
+        } else {
+          alert("No URL entered");
+        }
+      });
+
+      document.getElementById("goLink").addEventListener("click", () => {
+        if (savedLink) {
+          window.location.href = savedLink;
+        } else {
+          alert(
+            "The link is not saved yet. Please click the first button first"
+          );
+        }
+      });
+    </script>
   </body>
 </html>
