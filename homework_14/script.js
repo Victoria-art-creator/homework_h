@@ -29,7 +29,13 @@ slides.forEach((_, i) => {
   dot.addEventListener("click", () => goToSlide(i));
   dotsContainer.appendChild(dot);
 });
+
 const dots = document.querySelectorAll(".dot");
+
+function goToSlide(i) {
+  current = i;
+  updateSlider();
+}
 
 function updateSlider() {
   slides.forEach((slide, i) => slide.classList.toggle("active", i === current));
@@ -37,11 +43,6 @@ function updateSlider() {
 
   prevBtn.disabled = current === 0;
   nextBtn.disabled = current === slides.length - 1;
-}
-
-function goToSlide(i) {
-  current = i;
-  updateSlider();
 }
 
 nextBtn.addEventListener("click", () => {
