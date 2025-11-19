@@ -16,6 +16,11 @@
   position: relative;
 }
 
+.modal_open {
+  /* display: block; */
+  display: flex;
+}
+
 .close {
   position: absolute;
   top: 10px;
