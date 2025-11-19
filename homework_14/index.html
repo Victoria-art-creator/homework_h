@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 14</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <button id="openSlider">Open slider</button>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+
+        <div class="slider">
+          <button id="prevBtn" class="nav-btn prev">‹</button>
+
+          <div class="slides">
+            <img
+              src="https://picsum.photos/id/1015/800/500"
+              class="slide active"
+            />
+            <img src="https://picsum.photos/id/1025/800/500" class="slide" />
+            <img src="https://picsum.photos/id/1035/800/500" class="slide" />
+          </div>
+
+          <button id="nextBtn" class="nav-btn next">›</button>
+        </div>
+
+        <div class="dots"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

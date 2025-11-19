@@ -21,10 +21,6 @@ form.addEventListener("submit", (event) => {
     const input = form.querySelector(`[name="${inputName}"]`);
     const errorEl = document.createElement("div");
     errorEl.classList.add("error-message");
-    errorEl.style.color = "red";
-    errorEl.style.fontSize = "14px";
-    errorEl.style.marginTop = "-10px";
-    errorEl.style.marginBottom = "10px";
     errorEl.innerText = message;
     input.insertAdjacentElement("afterend", errorEl);
   }
