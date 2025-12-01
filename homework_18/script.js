@@ -27,5 +27,5 @@ class Clock {
   };
 }
 
-const clock = new Clock("#timer", 27);
+const clock = new Clock("#timer", 85);
 clock.start();
