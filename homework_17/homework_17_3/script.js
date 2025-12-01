@@ -1,22 +1,24 @@
 "use strict";
 
 class BankAccount {
+  #balance;
+
   constructor(balance) {
-    this.balance = balance;
+    this.#balance = balance;
   }
 
   getBalance() {
-    return this.balance;
+    return this.#balance;
   }
 
   deposit(depositAmount) {
     this.depositAmount = depositAmount;
-    this.balance = this.balance + depositAmount;
+    this.#balance = this.#balance + depositAmount;
   }
 
   withdraw(withdrawAmount) {
     this.withdrawAmount = withdrawAmount;
-    this.balance = this.balance - withdrawAmount;
+    this.#balance = this.#balance - withdrawAmount;
   }
 }
 
