@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework_19</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weather-card" role="region" aria-label="Weather data">
+      <div class="left">
+        <div class="top-row">
+          <div>
+            <div class="date" id="date">--</div>
+            <div class="location" id="location">--</div>
+          </div>
+
+          <div class="controls" aria-hidden="false">
+            <input
+              id="cityInput"
+              type="text"
+              placeholder="City (for example Kyiv)"
+              value="Kyiv"
+              aria-label="City"
+            />
+            <button id="searchBtn" class="btn" title="Search">Search</button>
+          </div>
+        </div>
+
+        <div class="main-row">
+          <div class="time-big">
+            <span id="time">--:--</span><span class="ampm" id="ampm">--</span>
+          </div>
+
+          <div style="flex: 1; min-width: 220px">
+            <div class="stats" id="stats">
+              Humidity: --%<br />
+              Pressure: -- hPa<br />
+              Wind: -- km/h
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="icon-wrap" id="iconWrap">
+          <img id="iconImg" src="" alt="" style="display: none" />
+        </div>
+
+        <div style="width: 100%">
+          <div class="temp" id="temp">-- °C</div>
+          <div class="feels" id="feels">Feels like: --</div>
+          <div class="footer-row">
+            <div id="updated">Last update: --</div>
+            <button id="refresh" class="refresh" title="Refresh">⟳</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
