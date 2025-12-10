@@ -1,0 +1,16 @@
+{
+  "name": "homework_20",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Viktoriia Vozianova <victoria.vozyanova@gmail.com>",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "jquery": "^3.7.1"
+  }
+}
