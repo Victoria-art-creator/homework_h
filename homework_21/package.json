@@ -1,0 +1,21 @@
+{
+  "name": "homework_20",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Viktoriia Vozianova <victoria.vozyanova@gmail.com>",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "build": "babel src -d build"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5"
+  }
+}
