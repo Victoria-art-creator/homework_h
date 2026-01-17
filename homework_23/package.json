@@ -1,0 +1,21 @@
+{
+  "name": "homework_23",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Viktoriia Vozianova <victoria.vozyanova@gmail.com>",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "dotenv-config": "^0.1.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.4",
+    "nodemon": "^3.1.11"
+  }
+}
