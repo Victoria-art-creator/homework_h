@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  padding: 10px;
+}
+
+.header,
+.footer {
+  padding: 10px;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.content {
+  height: 100vh;
+}
+
+.logo {
+  padding-right: 30px;
+}
+
+.header {
+  border-bottom: 1px solid orange;
+}
+
+.header__logo {
+  display: flex;
+  list-style: none;
+}
+
+.header__logo li {
+  padding: 10px;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid orange;
+}
+
+ul {
+  margin-left: 20px;
+}
